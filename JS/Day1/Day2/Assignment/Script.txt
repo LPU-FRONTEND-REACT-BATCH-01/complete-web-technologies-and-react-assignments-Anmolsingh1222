@@ -188,3 +188,10 @@ Feature	String Literal	String Interpolation
 Quotes	' ' / " "	` `
 Variables inside	❌ Not allowed	✅ Allowed
 Syntax	normal text	${variable}
+
+
+
+what is object?
+object is the real word entity is used to store key and value pair
+many ways to create object 
+take curly braces and then key and value pair
