@@ -24,4 +24,51 @@
 //     }
 // }
 
+//String Methods
 
+// let age =32
+// let name = `your age is  $(age), you are eligible to voye `
+// console.log("your age is"+age)
+// let names = "  chhota bheem"
+
+// console.log(names.toUpperCase())
+// console.log(names.toLowerCase())
+// console.log(names.trim())
+
+// console.log(names.split(","))
+
+// console.log(names.split(''))
+
+// console.log(names.length)
+
+// console.log(names.replace('a','k'))
+
+// console.log(names.charAt(2))
+
+// console.log(names.slice(3))
+
+
+// console.log(names.includes('q'))
+
+// write a function which accept username and pwd and email,,in username remove spaces and thgen convert to lowercase 
+// for email convert to lc and then separate domain and username in arraylist
+// fowr pwd check include if length greater that 8 and consist of @,* /
+// and at the last return 
+
+let username = prompt("Enter username : ");
+let email = prompt("Enter email : ");
+let password = prompt("Enter password: ");
+
+function Check(username, email, password) {
+    console.log(username.trim().toLowerCase());
+
+    console.log(email.toLowerCase().split("@"));
+
+    if (password.length > 8 && (password.includes('@','*','/'))) {
+        console.log("password is correct");
+    } else {
+        console.log("password is wrong");
+    }
+}
+
+Check(username, email, password);

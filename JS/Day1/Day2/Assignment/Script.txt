@@ -1,0 +1,190 @@
+📘 1. STRING METHODS
+🔹 What is String?
+👉 A string is a sequence of characters.
+
+let str = "chhota bheem";
+🔹 Important Methods
+1. toUpperCase() / toLowerCase()
+👉 Change case of string
+
+str.toUpperCase(); // CHHOTA BHEEM
+str.toLowerCase(); // chhota bheem
+2. trim()
+👉 Removes spaces from start & end
+
+let str = "  hello  ";
+str.trim(); // "hello"
+3. split()
+👉 Converts string → array
+
+"anmol@gmail.com".split("@")
+// ["anmol", "gmail.com"]
+4. length
+👉 Returns number of characters
+
+str.length;
+5. replace()
+👉 Replace character
+
+"ram".replace("r", "s") // sam
+6. charAt()
+👉 Get character at index
+
+"hello".charAt(1) // e
+7. slice()
+👉 Extract part of string
+
+"hello".slice(1, 4) // ell
+8. includes()
+👉 Check if value exists
+
+"hello".includes("he") // true
+📘 2. ARRAY METHODS
+🔹 What is Array?
+👉 Collection of values
+
+let arr = [1, 2, 3];
+🔹 Important Methods
+1. push()
+👉 Add element at end
+
+arr.push(4); // [1,2,3,4]
+2. pop()
+👉 Remove last element
+
+arr.pop(); // removes 4
+3. shift()
+👉 Remove first element
+
+arr.shift();
+4. unshift()
+👉 Add at beginning
+
+arr.unshift(0);
+5. map()
+👉 Transform array
+
+arr.map(x => x * 2);
+6. filter()
+👉 Filter values
+
+arr.filter(x => x > 2);
+📘 3. FUNCTIONS
+🔹 What is Function?
+👉 Block of code to perform a task
+
+🔹 Named Function
+function greet() {
+    console.log("Hello");
+}
+🔹 Function with Parameters
+function add(a, b) {
+    return a + b;
+}
+🔹 Arrow Function
+const add = (a, b) => a + b;
+📘 4. LOOPS
+🔹 for loop
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+🔹 while loop
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+📘 5. DOM (VERY IMPORTANT 🔥)
+🔹 What is DOM?
+👉 DOM = Document Object Model
+👉 It allows JavaScript to change HTML
+
+🔹 Select Element
+document.getElementById("id")
+document.querySelector(".class")
+🔹 Change Content
+document.getElementById("demo").innerText = "Hello";
+🔹 Events
+button.onclick = function() {
+    alert("Clicked");
+}
+📘 6. YOUR QUESTION (FULL LOGIC)
+✅ Problem
+Username → remove spaces + lowercase
+
+Email → lowercase + split
+
+Password → length > 8 + special char
+
+✅ Solution
+function Check(username, email, password) {
+
+    let cleanUser = username.trim().toLowerCase();
+
+    let emailParts = email.toLowerCase().split("@");
+
+    let validPassword =
+        password.length > 8 &&
+        (password.includes('@') || password.includes('*') || password.includes('/'));
+
+    return {
+        username: cleanUser,
+        email: emailParts,
+        passwordValid: validPassword
+    };
+}
+
+📘 1. STRING LITERALS
+🔹 Definition
+👉 A string literal is a string written directly in code using quotes.
+
+🔹 Types of String Literals
+1. Single Quotes
+let name = 'Anmol';
+2. Double Quotes
+let city = "Delhi";
+3. Backticks (Template Literals)
+let msg = `Hello`;
+🔹 Example
+let str1 = "Hello";
+let str2 = 'World';
+
+console.log(str1 + " " + str2);
+👉 Output:
+
+Hello World
+🧠 Key Point
+👉 String literal = fixed string value written in code
+
+📘 2. STRING INTERPOLATION
+🔹 Definition
+👉 String interpolation means inserting variables inside a string
+
+👉 Done using backticks ( ) and ${}
+
+🔹 Syntax
+`text ${variable}`
+🔹 Example
+let name = "Anmol";
+let age = 21;
+
+let msg = `My name is ${name} and I am ${age} years old`;
+
+console.log(msg);
+👉 Output:
+
+My name is Anmol and I am 21 years old
+❌ Common Mistake (YOU DID THIS)
+let age = 32;
+let msg = `your age is $(age)` ❌
+👉 Wrong → $()
+👉 Correct → ${}
+
+✅ Correct Version
+let age = 32;
+let msg = `your age is ${age}`;
+🔥 Difference (Important)
+Feature	String Literal	String Interpolation
+Quotes	' ' / " "	` `
+Variables inside	❌ Not allowed	✅ Allowed
+Syntax	normal text	${variable}
