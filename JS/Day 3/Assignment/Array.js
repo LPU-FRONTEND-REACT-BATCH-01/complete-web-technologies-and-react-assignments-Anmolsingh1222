@@ -1,0 +1,95 @@
+// let total = arr1.reduce((prev, curr) => {
+//     return prev + curr;
+// })
+// console.log(total);
+
+
+// let cart_data = [
+//     {
+//         id: 1,
+//         name:"Watch",
+//         price:2999
+//     },
+//     {
+//         id: 2,
+//         name: "Shoes",
+//         price: 199
+//     },
+//     {
+//         id: 3,
+//         name:"Earphone",
+//         price:299
+//     }
+// ]
+// let total_amount = cart_data.reduce((prev, value) => {
+//     return prev + value.price;
+// })
+
+// console.log(total_amount);
+
+
+
+
+// let arr = ["Banana","kiwi","Apple","orange"]
+// arr.sort()
+// console.log(arr)
+
+
+// let arr1 = [1,32,2,2,4,23,56,84,34]
+// arr1.sort((a,b)=>a-b)
+// arr1.sort((a,b)=>b-a)
+// console.log(arr1)
+
+
+/*filter method*/
+
+// let arr = [1,32,2,2,4,23,56,84,34]
+// let filtered_arr = arr.filter((ele)=> {
+//     return ele>20
+// })
+// for(let index = 0; index<arr.length;index++){
+//     let temp = []
+//     if(arr[i]>20){
+//         temp.push(arr[i])
+//     }
+//     return temp
+// }
+
+
+// console.log(arr)
+// console.log(filtered_arr)
+
+
+let cart_data = [
+    {
+        id: 1,
+        name:"Watch",
+        price:2999
+    },
+    {
+        id: 2,
+        name: "Shoes",
+        price: 199
+    },
+    {
+        id: 3,
+        name:"Earphone",
+        price:299
+    }
+]
+
+cart_data.sort((a,b)=>{
+    return a.name.localeCompare(b.name)}
+)
+console.log(cart_data)
+
+cart_data.sort((a,b)=>{
+    return a.price-b.price}
+)
+console.log(cart_data)
+
+
+let filtered_arr = cart_data.filter((item)=> {
+    return item.price>2000
+})
+console.log(filtered_arr)

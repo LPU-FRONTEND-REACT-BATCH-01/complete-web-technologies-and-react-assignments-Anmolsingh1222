@@ -101,14 +101,16 @@
 
 
 
-let username = prompt("Enter username: ");
-let email = prompt("Enter email: ");
-let password = prompt("Enter password: ");
-function objectCreator(username, email, password) {
-    return {
-        username:username,
-        email:email,
-        password:password
-    };
-}
-console.log(objectCreator(username,email,password));
+// let username = prompt("Enter username: ");
+// let email = prompt("Enter email: ");
+// let password = prompt("Enter password: ");
+// function objectCreator(username, email, password) {
+//     return {
+//         username:username,
+//         email:email,
+//         password:password
+//     };
+// }
+// console.log(objectCreator(username,email,password));
+
+
