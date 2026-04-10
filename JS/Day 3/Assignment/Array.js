@@ -124,45 +124,73 @@
 // let results = users.some(ele => ele.username === input.username)
 // console.log(results)
 
-let users = [
-    {
-        id:1,
-        username:"Anmolsingh1222",
-        password:"1234567"
-    },
-    {
-        id:2,
-        username:"bhayansh",
-        password:"bhavya"
-    },
-    {
-        id:3,
-        username:"AkhilRana",
-        password:"akahas"
-    }
-]
-let input = {
-    username:"AkhilRana",
-    password:"akahas"
-}
+// let users = [
+//     {
+//         id:1,
+//         username:"Anmolsingh1222",
+//         password:"1234567"
+//     },
+//     {
+//         id:2,
+//         username:"bhayansh",
+//         password:"bhavya"
+//     },
+//     {
+//         id:3,
+//         username:"AkhilRana",
+//         password:"akahas"
+//     }
+// ]
+// let input = {
+//     username:"AkhilRana",
+//     password:"akahas"
+// }
 
-let ch_uname = users.some(ele => ele.username === input.username)
-console.log(ch_uname)
+// let ch_uname = users.some(ele => ele.username === input.username)
+// console.log(ch_uname)
 
 
-if(ch_uname){
+// if(ch_uname){
 
     
-    let user = users.find(u => u.username === input.username);
+//     let user = users.find(u => u.username === input.username);
 
 
-    if(user.password === input.password){
-        console.log("Navigate to Home");
-    } else {
-        console.log("Invalid Password");
-    }
+//     if(user.password === input.password){
+//         console.log("Navigate to Home");
+//     } else {
+//         console.log("Invalid Password");
+//     }
 
-} else {
-    console.log("User not found");
-}
+// } else {
+//     console.log("User not found");
+// }
 
+
+
+// let original_Object = {
+//     id:1,
+//     name:"Nick",
+//     city:"pune"
+// }
+// let duplicate = {...original_Object,state:"maharastra"}
+// console.log(duplicate)
+// // // let duplicate = original_Object;
+// // // let duplicate = structuredClone(original_Object);
+
+
+// // original_Object.state = "Maharastra"
+
+// console.log(original_Object)
+
+
+
+
+
+// let arr = [1,2,3,2345,21,53,35,3543]
+
+// let duplicate = [...arr]
+// arr.push("hello")
+// console.log(duplicate)
+// console.log(arr)
+// console.log(...arr)
