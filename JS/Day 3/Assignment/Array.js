@@ -60,36 +60,109 @@
 // console.log(filtered_arr)
 
 
-let cart_data = [
+// let cart_data = [
+//     {
+//         id: 1,
+//         name:"Watch",
+//         price:2999
+//     },
+//     {
+//         id: 2,
+//         name: "Shoes",
+//         price: 199
+//     },
+//     {
+//         id: 3,
+//         name:"Earphone",
+//         price:299
+//     }
+// ]
+
+// cart_data.sort((a,b)=>{
+//     return a.name.localeCompare(b.name)}
+// )
+// console.log(cart_data)
+
+// cart_data.sort((a,b)=>{
+//     return a.price-b.price}
+// )
+// console.log(cart_data)
+
+
+// let filtered_arr = cart_data.filter((item)=> {
+//     return item.price>2000
+// })
+// console.log(filtered_arr)
+
+
+// let arr = ["Apple","Banana","orange"]
+// let res = arr.some(ele => ele === "Apple")
+// console.log(res)
+
+// let users = [
+//     {
+//         id:1,
+//         username:"Anmolsingh1222",
+//         password:"1234567"
+//     },
+//     {
+//         id:2,
+//         username:"bhayansh",
+//         password:"bhavya"
+//     },
+//     {
+//         id:3,
+//         username:"AkhilRana",
+//         password:"akahas"
+//     }
+// ]
+// let input = {
+//     username:"AkhilRana",
+//     password:"Chutki"
+// }
+
+// let results = users.some(ele => ele.username === input.username)
+// console.log(results)
+
+let users = [
     {
-        id: 1,
-        name:"Watch",
-        price:2999
+        id:1,
+        username:"Anmolsingh1222",
+        password:"1234567"
     },
     {
-        id: 2,
-        name: "Shoes",
-        price: 199
+        id:2,
+        username:"bhayansh",
+        password:"bhavya"
     },
     {
-        id: 3,
-        name:"Earphone",
-        price:299
+        id:3,
+        username:"AkhilRana",
+        password:"akahas"
     }
 ]
+let input = {
+    username:"AkhilRana",
+    password:"akahas"
+}
 
-cart_data.sort((a,b)=>{
-    return a.name.localeCompare(b.name)}
-)
-console.log(cart_data)
-
-cart_data.sort((a,b)=>{
-    return a.price-b.price}
-)
-console.log(cart_data)
+let ch_uname = users.some(ele => ele.username === input.username)
+console.log(ch_uname)
 
 
-let filtered_arr = cart_data.filter((item)=> {
-    return item.price>2000
-})
-console.log(filtered_arr)
+if(ch_uname){
+
+    
+    let user = users.find(u => u.username === input.username);
+
+
+    if(user.password === input.password){
+        console.log("Navigate to Home");
+    } else {
+        console.log("Invalid Password");
+    }
+
+} else {
+    console.log("User not found");
+}
+
