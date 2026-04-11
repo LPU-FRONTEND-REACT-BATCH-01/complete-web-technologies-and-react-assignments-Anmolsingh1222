@@ -194,3 +194,12 @@
 // console.log(duplicate)
 // console.log(arr)
 // console.log(...arr)
+
+
+
+//Rest Operator
+
+function numbers(...number){
+    console.log(number)
+}
+numbers(21,20,2,3,2)
