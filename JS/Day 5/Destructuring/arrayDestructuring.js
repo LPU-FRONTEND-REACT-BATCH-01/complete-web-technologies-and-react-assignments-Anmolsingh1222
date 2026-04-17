@@ -39,3 +39,12 @@
 
 // let {id,username,userLocation:{city,state},phone,skills:{frontend,backend} }=users;
 // console.log(id, username, city, state, phone, frontend, backend);
+
+
+
+
+let price = 500
+let name = "Anmol"
+
+export const pName = name;
+export const productName = price;
